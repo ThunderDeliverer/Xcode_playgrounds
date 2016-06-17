@@ -45,6 +45,9 @@
                                     <constraint firstItem="04b-rA-LZS" firstAttribute="leading" secondItem="pWu-La-o6b" secondAttribute="leading" id="Rg4-PP-0ci"/>
                                 </constraints>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yhq-YP-muR">
+                                <rect key="frame" x="20" y="193" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
