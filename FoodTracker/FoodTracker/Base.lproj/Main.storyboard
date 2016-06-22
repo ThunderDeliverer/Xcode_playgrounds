@@ -3,6 +3,7 @@
     <dependencies>
         <deployment version="2336" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -45,8 +46,11 @@
                                     <constraint firstItem="04b-rA-LZS" firstAttribute="leading" secondItem="pWu-La-o6b" secondAttribute="leading" id="Rg4-PP-0ci"/>
                                 </constraints>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yhq-YP-muR">
-                                <rect key="frame" x="20" y="193" width="240" height="128"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" translatesAutoresizingMaskIntoConstraints="NO" id="Yhq-YP-muR">
+                                <rect key="frame" x="20" y="193" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Yhq-YP-muR" secondAttribute="height" multiplier="1:1" id="iwJ-wh-3Mi"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
