@@ -36,15 +36,15 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     
     //MARK: UIImagePickerControllerDelegate
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
-        //Dismiss the picker if the user cancelled.
+        // Dismiss the picker if the user canceled.
         dismissViewControllerAnimated(true, completion: nil)
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        //The info dictionary contains ultiple representations of the image, and this uses the original.
+        // The info dictionary contains multiple representations of the image, and this uses the original.
         let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
         
-        //Set photoImageView to display the selected image.
+        // Set photoImageView to display the selected image.
         photoImageView.image = selectedImage
         
         // Dismiss the picker.

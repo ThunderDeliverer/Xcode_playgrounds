@@ -50,6 +50,7 @@
                                 <rect key="frame" x="20" y="193" width="320" height="320"/>
                                 <gestureRecognizers/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="Yhq-YP-muR" secondAttribute="height" multiplier="1:1" id="g4p-aY-teN"/>
                                     <constraint firstAttribute="width" secondItem="Yhq-YP-muR" secondAttribute="height" multiplier="1:1" id="iwJ-wh-3Mi"/>
                                 </constraints>
                                 <connections>
@@ -60,8 +61,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="pWu-La-o6b" secondAttribute="trailing" id="Awz-Qu-yNE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Yhq-YP-muR" secondAttribute="trailing" id="Ktg-Vc-p7K"/>
                             <constraint firstItem="pWu-La-o6b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Z9U-wx-FZB"/>
                             <constraint firstItem="pWu-La-o6b" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="d5E-vB-44H"/>
+                            <constraint firstItem="Yhq-YP-muR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uoE-VW-rfO"/>
                         </constraints>
                     </view>
                     <connections>
