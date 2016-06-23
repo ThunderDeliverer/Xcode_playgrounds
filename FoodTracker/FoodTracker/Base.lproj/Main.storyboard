@@ -19,11 +19,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="pWu-La-o6b">
-                                <rect key="frame" x="20" y="80" width="560" height="105"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="pWu-La-o6b">
+                                <rect key="frame" x="20" y="80" width="560" height="63"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sn3-3r-Gye">
-                                        <rect key="frame" x="0.0" y="0.0" width="87" height="21"/>
+                                        <rect key="frame" x="237" y="0.0" width="87" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -33,13 +33,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCc-Xp-pYg">
-                                        <rect key="frame" x="0.0" y="75" width="151" height="30"/>
-                                        <state key="normal" title="Set Default Label Text"/>
-                                        <connections>
-                                            <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XE1-9r-1ft"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="04b-rA-LZS" secondAttribute="trailing" id="781-jm-kLv"/>
@@ -47,7 +40,7 @@
                                 </constraints>
                             </stackView>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="Yhq-YP-muR">
-                                <rect key="frame" x="20" y="193" width="320" height="320"/>
+                                <rect key="frame" x="140" y="151" width="320" height="320"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Yhq-YP-muR" secondAttribute="height" multiplier="1:1" id="g4p-aY-teN"/>
@@ -57,20 +50,32 @@
                                     <outletCollection property="gestureRecognizers" destination="hYg-cr-eDD" appends="YES" id="XeX-ag-Ies"/>
                                 </connections>
                             </imageView>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="ev0-nA-5tA" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                <rect key="frame" x="20" y="479" width="240" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="pWu-La-o6b" secondAttribute="trailing" id="Awz-Qu-yNE"/>
+                            <constraint firstItem="ev0-nA-5tA" firstAttribute="top" secondItem="Yhq-YP-muR" secondAttribute="bottom" constant="10" id="Bsl-qx-XCZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ev0-nA-5tA" secondAttribute="trailing" id="JEf-dV-J8j"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Yhq-YP-muR" secondAttribute="trailing" id="Ktg-Vc-p7K"/>
+                            <constraint firstItem="ev0-nA-5tA" firstAttribute="top" secondItem="Yhq-YP-muR" secondAttribute="bottom" constant="8" id="Y23-w1-rfS"/>
                             <constraint firstItem="pWu-La-o6b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Z9U-wx-FZB"/>
+                            <constraint firstItem="ev0-nA-5tA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cTN-36-Jch"/>
                             <constraint firstItem="pWu-La-o6b" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="d5E-vB-44H"/>
+                            <constraint firstItem="ev0-nA-5tA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gY7-en-coT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ev0-nA-5tA" secondAttribute="trailing" id="sum-Ie-zFE"/>
                             <constraint firstItem="Yhq-YP-muR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uoE-VW-rfO"/>
+                            <constraint firstItem="ev0-nA-5tA" firstAttribute="top" secondItem="Yhq-YP-muR" secondAttribute="bottom" id="xxj-gC-RwO"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="mealNameLabel" destination="Sn3-3r-Gye" id="vas-8i-RoK"/>
                         <outlet property="nameTextField" destination="04b-rA-LZS" id="Rqk-hN-R0n"/>
                         <outlet property="photoImageView" destination="Yhq-YP-muR" id="HQD-da-Qz5"/>
+                        <outlet property="ratingControl" destination="ev0-nA-5tA" id="ggA-Jy-XCL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

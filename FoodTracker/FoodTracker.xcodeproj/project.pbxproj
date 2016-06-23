@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5546DBD81D1C81A500F02674 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5546DBD71D1C81A500F02674 /* RatingControl.swift */; };
 		554C22F31D11DB310044FA5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C22F21D11DB310044FA5B /* AppDelegate.swift */; };
 		554C22F51D11DB310044FA5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C22F41D11DB310044FA5B /* ViewController.swift */; };
 		554C22F81D11DB310044FA5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554C22F61D11DB310044FA5B /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5546DBD71D1C81A500F02674 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		554C22EF1D11DB310044FA5B /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		554C22F21D11DB310044FA5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; usesTabs = 1; };
 		554C22F41D11DB310044FA5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				554C22F21D11DB310044FA5B /* AppDelegate.swift */,
 				554C22F41D11DB310044FA5B /* ViewController.swift */,
 				554C22F61D11DB310044FA5B /* Main.storyboard */,
+				5546DBD71D1C81A500F02674 /* RatingControl.swift */,
 				554C22F91D11DB310044FA5B /* Assets.xcassets */,
 				554C22FB1D11DB310044FA5B /* LaunchScreen.storyboard */,
 				554C22FE1D11DB310044FA5B /* Info.plist */,
@@ -199,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				554C22F51D11DB310044FA5B /* ViewController.swift in Sources */,
+				5546DBD81D1C81A500F02674 /* RatingControl.swift in Sources */,
 				554C22F31D11DB310044FA5B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
